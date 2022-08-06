@@ -1,14 +1,18 @@
 <?php
-    class Home extends Controllers{
+    class Home extends Controllers
+    {
         public function __construct()
         {
             parent::__construct();
         }
-        public function home(){
-            $this->views->getView($this, "home");
-        }
-        public function datos($params){
-            echo $params;
+        public function home()
+        {
+            $data['page_id'] = 1;
+            $data['tag_page'] = "Home";
+            $data['page_title'] = "Estudiantes";
+            $data['page_name'] = "Home";
+
+            $this->views->getView($this, "home", $data);
         }
     }
 ?>
