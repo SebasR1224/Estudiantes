@@ -8,7 +8,7 @@
         public function home()
         {
             $data['page_id'] = 1;
-            $data['tag_page'] = "Home";
+            $data['page_tag'] = "Home";
             $data['page_title'] = "Estudiantes";
             $data['page_name'] = "Home";
 

@@ -9,5 +9,8 @@
 <body>
     <h1><?php echo $data['page_title']?></h1>
     <?php print_r($data)?>
+
+    <?php echo base_url() ?>
+    <?php echo token() ?>
 </body>
 </html>
