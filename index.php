@@ -42,10 +42,10 @@
         if(method_exists($controller, $method)){
             $controller->{$method}($params);
         }else{
-            echo "No existe el metodo";
+            echo "There is no method";
         }
     }else{
-        echo "No existe el controlador";
+        echo "Controller does not exist";
     }
 
 ?>
