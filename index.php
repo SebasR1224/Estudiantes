@@ -42,10 +42,10 @@
         if(method_exists($controller, $method)){
             $controller->{$method}($params);
         }else{
-            echo "There is no method";
+            require_once("Controllers/Error.php");
         }
     }else{
-        echo "Controller does not exist";
+        require_once("Controllers/Error.php");
     }
 
 ?>
