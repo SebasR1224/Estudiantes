@@ -4,6 +4,23 @@
         return BASE_URL;
     }
 
+    //devuelve la ruta assets
+    function media(){
+        return BASE_URL."/Assets";
+    }
+    
+    //incorporar  los templates a las vistas
+    function view_header($data=""){
+        $header = "Views/Template/header.php";
+        require_once($header);
+    }
+
+    function view_footer($data=""){
+        $header = "Views/Template/footer.php";
+        require_once($header);
+    }
+
+
     //formata un array para vizualizarlo mejor
     function dep($data){
         $format = print_r('<pre>');
@@ -11,6 +28,7 @@
         $format = print_r('<pre>');
         return $format;
     }
+    
 
     //Limpia una cadea de texto
     function strClean($strCadena){
