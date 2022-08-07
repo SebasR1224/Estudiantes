@@ -1,5 +1,5 @@
 <?php
-
+    const PROYECT_NAME = "Escuela";
     const BASE_URL = "http://localhost/Estudiantes/";
     //Zona horaria
     date_default_timezone_set('America/Bogota');
