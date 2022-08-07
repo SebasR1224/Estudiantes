@@ -1,4 +1,5 @@
 <?php
+    defined('BASE_PATH') or exit('No se permite acceso directo');
     $controllerFile = "Controllers/".$controller.".php";
     if(file_exists($controllerFile))
     {

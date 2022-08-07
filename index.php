@@ -1,8 +1,11 @@
 <?php
+    define('BASE_PATH', true);
     require_once("Config/Config.php");
     require_once("Helpers/Helpers.php");
 
-    $url = !empty($_GET['url']) ? $_GET['url'] : 'home/home';
+    error_reporting(ERROR_REPORTING_LEVEL);
+
+    $url = !empty($_REQUEST['url']) ? $_REQUEST['url'] : 'home/home';
     $arrayUrl = explode("/", $url);
 
     $controller = $arrayUrl[0];

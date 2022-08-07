@@ -1,4 +1,5 @@
 <?php
+    defined('BASE_PATH') or exit('No se permite acceso directo');
     //devuelve la url del proyecto
     function base_url(){
         return BASE_URL;

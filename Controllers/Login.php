@@ -1,5 +1,5 @@
 <?php
-
+    defined('BASE_PATH') or exit('No se permite acceso directo');
     class Login extends Controllers
     {
         public function __construct()
@@ -14,6 +14,10 @@
             $data['page_name'] = "Login";
 
             $this->views->getView($this, "login", $data);
+        }
+
+        public function sigin($params){
+            var_dump($params);
         }
     }
 ?>

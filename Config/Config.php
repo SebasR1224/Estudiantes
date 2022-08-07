@@ -1,4 +1,6 @@
 <?php
+    defined('BASE_PATH') or exit('No se permite acceso directo');
+
     const PROYECT_NAME = "Escuela";
     const BASE_URL = "http://localhost/Estudiantes/";
     //Zona horaria
@@ -9,5 +11,8 @@
     const DB_PASSWORD = "";
     const DB_NAME = "escuela";
     const DB_CHARSET = "charset=utf8";
+
+    //Control de errores en php
+    const ERROR_REPORTING_LEVEL = -1;
 
 ?>
