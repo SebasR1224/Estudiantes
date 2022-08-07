@@ -20,6 +20,10 @@
         require_once($header);
     }
 
+    function getModal(string $name, $data){
+        $modal = "Views/Template/Modals/{$name}.php";
+        require_once $modal;
+    }
 
     //formata un array para vizualizarlo mejor
     function dep($data){
