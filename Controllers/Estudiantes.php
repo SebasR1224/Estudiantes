@@ -14,5 +14,7 @@
 
             $this->views->getView($this, "estudiantes", $data);
         }
+
+        
     }
 ?>
